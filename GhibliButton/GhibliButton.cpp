@@ -150,12 +150,12 @@ void LoadPictureResource(LPCTSTR lpName, LPCTSTR lpType)
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     static HWND hButton[11];
-    static LPCWSTR lpszButtonName[] = { L"すばらしい！", L"ほう..", L"またねっ", L"ＯＫ", L"ハハハハッ", L"いいね！", L"ありがとう①", L"フフフ", L"なるほど", L"ほほぅ", L"ありがとう②" };
-    static INT nImageID[] = { IDB_BITMAP7, IDB_BITMAP8, IDB_BITMAP9, IDB_BITMAP6, IDB_BITMAP2, IDB_BITMAP3, IDB_BITMAP5, IDB_BITMAP4, IDB_BITMAP11, IDB_BITMAP1, IDB_BITMAP10 };
+    static LPCWSTR lpszButtonName[] = { L"すばらしい！", L"ほう..", L"またねっ", L"ＯＫ", L"ハハハハッ", L"いいね！", L"ありがとう①", L"フフフ", L"なるほど", L"ほほぅ", L"ありがとう②", L"ゴォォォ・・・",L"やなヤツやなヤツ",L"♩♪♩♩♫♪",L"！",L"いいよ",L"おっと",L"ごめんね",L"またね"};
+    static INT nImageID[] = { IDB_BITMAP7, IDB_BITMAP8, IDB_BITMAP9, IDB_BITMAP6, IDB_BITMAP2, IDB_BITMAP3, IDB_BITMAP5, IDB_BITMAP4, IDB_BITMAP11, IDB_BITMAP1, IDB_BITMAP10, IDB_BITMAP12, IDB_BITMAP13, IDB_BITMAP14, IDB_BITMAP15, IDB_BITMAP16, IDB_BITMAP17, IDB_BITMAP18, IDB_BITMAP19 };
     switch (message)
     {
     case WM_CREATE:
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 18; i++) {
             hButton[i] = CreateWindow(L"BUTTON", lpszButtonName[i], WS_VISIBLE | WS_CHILD, 10 + 110 * i, 10, 100, 32, hWnd, (HMENU)(1000 + nImageID[i]), ((LPCREATESTRUCT)lParam)->hInstance, 0);
         }
         LoadPictureResource(MAKEINTRESOURCE(nImageID[0]), TEXT("JPG"));
