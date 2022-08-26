@@ -9,3 +9,5 @@
 1. https://twitter.com/JP_GHIBLI/status/1558256785068154881
 1. https://twitter.com/JP_GHIBLI/status/1558257092091252736
 1. https://twitter.com/JP_GHIBLI/status/1558257670708011008
+1. https://twitter.com/JP_GHIBLI/status/1563169393160335360
+1. https://twitter.com/JP_GHIBLI/status/1563169644776591368
