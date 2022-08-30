@@ -158,7 +158,7 @@ bool CopyImage(const LPPICTURE pPic)
             result = true;
         }
         CloseClipboard();
-        //DeleteObject(hbitmap);//これを実行するとLPPICTUREのデータも消える
+        //DeleteObject(hbitmap);
     }
     return result;
 }
